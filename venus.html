@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus - Todo sobre el Segundo Planeta</title>
+    <style>
+        body {
+            background: radial-gradient(circle at 50% 20%, #fff3e0 0%, #ffe0b2 60%, #e65100 100%);
+            color: #6d4c1b;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            border: 5px solid #ffb300;
+            padding: 20px 0 40px 0;
+            margin: 30px auto;
+            width: 95%;
+            max-width: 850px;
+            border-radius: 18px;
+            box-shadow: 0 0 30px #ffb300;
+            background-color: rgba(255, 236, 179, 0.93);
+        }
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px #ffb300;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            animation: shake 1s infinite alternate;
+            color: #e65100;
+        }
+        @keyframes shake {
+            0% { transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); }
+        }
+        .animated-logo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 3px solid #ffb300;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #ffb300;
+            animation: pulse 1.5s infinite alternate;
+            margin-bottom: 20px;
+            background: #ffe0b2;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.08); }
+        }
+        section {
+            margin: 30px auto;
+            padding: 22px;
+            background-color: rgba(255, 224, 178, 0.85);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px #ffb30033;
+            text-align: center;
+            display: block;
+            width: 90%;
+            max-width: 600px;
+        }
+        h1, h2 {
+            color: #e65100;
+            text-align: center;
+            margin-top: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0 auto;
+            display: inline-block;
+            text-align: left;
+        }
+        ul li {
+            margin-bottom: 7px;
+            font-size: 1.08em;
+        }
+        ul li::before {
+            content: "🪐 ";
+            margin-right: 5px;
+            color: #ffb300;
+        }
+        .description {
+            font-size: 1.2em;
+            margin: 15px 0 10px 0;
+            text-align: center;
+            color: #6d4c1b;
+        }
+        .price-section {
+            margin-top: 30px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ffb300;
+            animation: fadeIn 2s ease-in;
+            color: #e65100;
+        }
+        .buy-button {
+            background-color: #ffb300;
+            color: #fff;
+            padding: 10px 22px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px #ffb300;
+            transition: transform 0.2s, background 0.2s;
+            margin-top: 10px;
+        }
+        .buy-button:hover {
+            background-color: #e65100;
+            color: #fff;
+            border: 2px solid #ffb300;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1em;
+            color: #e65100;
+            letter-spacing: 1px;
+            font-weight: 500;
+            text-shadow: 0 0 10px #ffb300;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 10px 0 20px 0; }
+            section { width: 98%; padding: 10px; }
+            .animated-logo { width: 120px; height: 120px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Venus: Todo sobre el Segundo Planeta</h1>
+        </header>
+        <main>
+            <section class="intro">
+                <img src="https://media2.giphy.com/media/l0MYB89UFsVqLY5oc/giphy-downsized-large.gif" alt="Venus animado" class="animated-logo">
+                <p class="description">
+                    <strong>Tamaño y estructura:</strong> Casi del mismo tamaño que la Tierra (diámetro de unos 12,100 km). Es un planeta rocoso, con una estructura interna similar a la terrestre: núcleo, manto y corteza.<br>
+                    <strong>Posición:</strong> Es el segundo planeta desde el Sol, a unos 108 millones de km de distancia. A menudo se le llama el "lucero del alba" o "estrella vespertina" porque brilla intensamente en el cielo poco antes del amanecer o después del atardecer.<br>
+                    <strong>Rotación y traslación:</strong> Un día en Venus (rotación) dura 243 días terrestres, ¡más largo que su año! Su año (traslación alrededor del Sol) dura 225 días terrestres. Además, gira en dirección contraria a la mayoría de los planetas (rotación retrógrada).<br>
+                    <strong>Temperatura y atmósfera:</strong> Es el planeta más caliente del sistema solar, con temperaturas de hasta 465 °C, más que Mercurio, a pesar de estar más lejos del Sol. Tiene una atmósfera densa compuesta principalmente de dióxido de carbono, con nubes de ácido sulfúrico. Efecto invernadero extremo: su atmósfera atrapa el calor como un horno gigante.<br>
+                    <strong>Superficie:</strong> Llena de volcanes, llanuras de lava, montañas y pocos cráteres (lo que indica que su superficie es relativamente joven). Está completamente cubierta por nubes, por eso es difícil observarla directamente desde el espacio.<br>
+                    <strong>Lunas:</strong> No tiene lunas ni anillos.
+                </p>
+            </section>
+
+            <section>
+                <h2>🧾 Datos Generales</h2>
+                <ul>
+                    <li>Nombre: Venus</li>
+                    <li>Tipo: Planeta rocoso</li>
+                    <li>Diámetro: 12,104 km</li>
+                    <li>Masa: 4.87 × 10²⁴ kg</li>
+                    <li>Gravedad: 8.87 m/s²</li>
+                    <li>Color: Amarillo-blanco brillante</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>🌌 Ubicación en el Sistema Solar</h2>
+                <ul>
+                    <li>Segundo planeta desde el Sol</li>
+                    <li>Distancia al Sol: ~108 millones km</li>
+                    <li>Satélites naturales: Ninguno</li>
+                    <li>Duración del año: 225 días terrestres</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>🔁 Movimientos</h2>
+                <ul>
+                    <li>Rotación retrógrada: 243 días terrestres</li>
+                    <li>Día solar: ~117 días terrestres</li>
+                    <li>Inclinación del eje: 177.4°</li>
+                    <li>Velocidad orbital: ~35 km/s</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>☁️ Atmósfera</h2>
+                <ul>
+                    <li>96% Dióxido de carbono</li>
+                    <li>3.5% Nitrógeno</li>
+                    <li>Presión: 92 veces la terrestre</li>
+                    <li>Temperatura media: ~470 °C</li>
+                    <li>Nubes de ácido sulfúrico</li>
+                    <li>Efecto invernadero extremo</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>🌋 Superficie</h2>
+                <ul>
+                    <li>Llanuras volcánicas y montañas</li>
+                    <li>Volcanes posiblemente activos</li>
+                    <li>Monte Maxwell (el pico más alto)</li>
+                    <li>Mesetas: Ishtar Terra y Aphrodite Terra</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>🧪 Condiciones y Curiosidades</h2>
+                <ul>
+                    <li>La presión atmosférica en la superficie es similar a estar a 900 m bajo el agua en la Tierra.</li>
+                    <li>El Sol sale por el oeste y se pone por el este debido a su rotación retrógrada.</li>
+                    <li>Brilla intensamente en el cielo al amanecer y atardecer.</li>
+                    <li>Es el planeta más parecido a la Tierra en tamaño y masa, pero muy diferente en condiciones.</li>
+                </ul>
+            </section>
+
+            <section class="price-section">
+                <p>Tipo: <strong>Planeta</strong></p>
+                <button class="buy-button" onclick="window.location.href='sistema solar.html'">Sistema Solar</button>
+            </section>
+        </main>
+        <footer>
+            🪐 Información compilada por Wikipedia | 2025
+        </footer>
+    </div>
+</body>
+</html>

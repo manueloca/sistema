@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptuno - El Gigante Azul</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: radial-gradient(ellipse at center, #1e2a78 0%, #0b0c2a 80%, #000 100%);
+            color: #e0f7fa;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            border: 5px solid #64b5f6;
+            padding: 30px 20px 20px 20px;
+            margin: 40px auto;
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 18px;
+            box-shadow: 0 0 20px #64b5f6;
+            background-color: rgba(11, 12, 42, 0.93);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #64b5f6;
+            text-shadow: 0 0 10px #64b5f6, 0 0 2px #fff;
+            margin-bottom: 0.2em;
+            animation: shake 1.5s infinite alternate;
+        }
+        @keyframes shake {
+            0% { transform: rotate(-1.5deg);}
+            100% { transform: rotate(1.5deg);}
+        }
+        .animated-logo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 3px solid #64b5f6;
+            border-radius: 50%;
+            box-shadow: 0 0 25px #64b5f6;
+            animation: pulse 1.5s infinite alternate;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+        @keyframes pulse {
+            from { transform: scale(1);}
+            to { transform: scale(1.07);}
+        }
+        h1, h2, h3 {
+            color: #64b5f6;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        ul, ol {
+            margin: 0 auto 1.5em auto;
+            padding-left: 1.2em;
+            max-width: 700px;
+            text-align: left;
+            display: inline-block;
+        }
+        ul li, ol li {
+            margin-bottom: 0.5em;
+        }
+        table {
+            width: 95%;
+            border-collapse: collapse;
+            margin: 20px auto 30px auto;
+            background: rgba(30, 42, 120, 0.85);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px #64b5f6aa;
+        }
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+            color: #e0f7fa;
+        }
+        th {
+            background: #64b5f6;
+            color: #0b0c2a;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background: rgba(100, 181, 246, 0.07);
+        }
+        a {
+            color: #4fc3f7;
+        }
+        .price-section {
+            margin-top: 25px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 0 0 10px #64b5f6;
+            animation: fadeIn 2s ease-in;
+        }
+        .buy-button {
+            background-color: #64b5f6;
+            color: #0b0c2a;
+            padding: 12px 28px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px #64b5f6;
+            margin-top: 10px;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+        .buy-button:hover {
+            background-color: #0b0c2a;
+            color: #64b5f6;
+            border: 2px solid #64b5f6;
+            transform: scale(1.07);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0;}
+            to { opacity: 1;}
+        }
+        @media (max-width: 900px) {
+            table, ul, ol {
+                width: 98%;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                padding: 10px;
+            }
+            table, ul, ol {
+                width: 100%;
+            }
+            .logo {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://th.bing.com/th/id/R.63c370d0d658323bff582e0de37bbcb1?rik=Ri%2bV2BIhqWwvrA&riu=http%3a%2f%2fbestanimations.com%2fuploads%2fgifs%2f1696608870neptune-planet-animation-4.gif&ehk=v3FNAMRD6e1Iezmp5Wn13aPyM84c0f8TsahxsCLDvQY%3d&risl=&pid=ImgRaw&r=0" alt="Neptuno animado" class="animated-logo">
+        <header>
+            <h1 class="logo">🔵 Neptuno: El gigante azul del sistema solar</h1>
+        </header>
+        <main>
+            <section class="section">
+                <h2>🪐 Información General</h2>
+                <ul>
+                    <li><strong>Tipo de planeta:</strong> Gigante gaseoso (helado)</li>
+                    <li><strong>Posición desde el Sol:</strong> 8.º planeta</li>
+                    <li><strong>Diámetro:</strong> ~49,244 km</li>
+                    <li><strong>Masa:</strong> 1.02 × 10²⁶ kg (17 masas terrestres)</li>
+                    <li><strong>Gravedad:</strong> 11.15 m/s²</li>
+                    <li><strong>Duración del día:</strong> 16 h 6 min</li>
+                    <li><strong>Duración del año:</strong> 165 años terrestres</li>
+                    <li><strong>Temperatura media:</strong> -214 °C</li>
+                    <li><strong>Atmósfera:</strong> Hidrógeno (~80%), helio (~19%), metano (~1.5%)</li>
+                    <li><strong>Lunas:</strong> 14 conocidas</li>
+                    <li><strong>Anillos:</strong> 5 delgados y oscuros</li>
+                    <li><strong>Densidad media:</strong> 1.638 g/cm³</li>
+                    <li><strong>Distancia media al Sol:</strong> 4,495 millones de km</li>
+                    <li><strong>Velocidad orbital:</strong> 5.43 km/s</li>
+                    <li><strong>Albedo:</strong> 0.29 (refleja el 29% de la luz solar)</li>
+                    <li><strong>Presión atmosférica:</strong> ~100 kPa (similar a la Tierra en la superficie, pero varía mucho)</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌬️ Características Destacadas</h2>
+                <ul>
+                    <li>Color azul intenso debido al metano en su atmósfera</li>
+                    <li>Vientos supersónicos de hasta 2,100 km/h (los más rápidos del sistema solar)</li>
+                    <li>Tormentas gigantes, como la Gran Mancha Oscura y la Pequeña Mancha Oscura</li>
+                    <li>Campo magnético inclinado 47° respecto al eje de rotación y desplazado del centro</li>
+                    <li>Emite más calor del que recibe del Sol</li>
+                    <li>Posee auroras polares intensas</li>
+                    <li>Su atmósfera tiene nubes de metano y cristales de hielo de amoníaco</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌌 Lunas de Neptuno</h2>
+                <table>
+                    <tr>
+                        <th>Luna</th>
+                        <th>Características</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Tritón</strong></td>
+                        <td>La más grande; órbita retrógrada; posible océano subterráneo; géiseres de nitrógeno; superficie joven y helada</td>
+                    </tr>
+                    <tr>
+                        <td>Nereida</td>
+                        <td>Órbita muy excéntrica; tercera luna más grande de Neptuno</td>
+                    </tr>
+                    <tr>
+                        <td>Proteo</td>
+                        <td>Segunda luna más grande; forma irregular; superficie muy oscura</td>
+                    </tr>
+                    <tr>
+                        <td>Larisa, Galatea, Despina, Thalassa, Naiad</td>
+                        <td>Lunas interiores pequeñas e irregulares</td>
+                    </tr>
+                    <tr>
+                        <td>Halimede, Sao, Laomedeia, Psámate, Neso</td>
+                        <td>Lunas exteriores, órbitas muy inclinadas y distantes</td>
+                    </tr>
+                </table>
+                <p><strong>Dato:</strong> Tritón representa el 99.5% de la masa en órbita alrededor de Neptuno.</p>
+            </section>
+            <section class="section">
+                <h2>🛰️ Exploración Espacial</h2>
+                <table>
+                    <tr>
+                        <th>Misión</th>
+                        <th>Agencia</th>
+                        <th>Año</th>
+                        <th>Detalles</th>
+                    </tr>
+                    <tr>
+                        <td>Voyager 2</td>
+                        <td>NASA</td>
+                        <td>1989</td>
+                        <td>Única sonda que lo ha visitado; descubrió la Gran Mancha Oscura, anillos y seis lunas nuevas</td>
+                    </tr>
+                </table>
+                <ul>
+                    <li>Propuestas futuras: misión "Neptune Odyssey" (NASA, 2030s), misión europea "ODINUS" (ESA, en estudio)</li>
+                    <li>La observación desde la Tierra se realiza con telescopios avanzados y el Telescopio Espacial Hubble</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🧪 Composición Interna</h2>
+                <ul>
+                    <li><strong>Núcleo:</strong> Rocoso (hierro, níquel, silicatos), estimado en 1.2 masas terrestres</li>
+                    <li><strong>Capa media:</strong> Agua, metano y amoníaco en estado líquido y hielo</li>
+                    <li><strong>Manto:</strong> Mezcla de agua, amoníaco y metano, formando un "océano" caliente y denso</li>
+                    <li><strong>Atmósfera exterior:</strong> Hidrógeno, helio, metano</li>
+                    <li><strong>Presencia de diamantes:</strong> Se cree que la presión interna puede formar diamantes sólidos</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>📡 Anillos de Neptuno</h2>
+                <ul>
+                    <li>5 anillos principales: Galle, Le Verrier, Lassell, Arago y Adams</li>
+                    <li>Compuestos de polvo, partículas de hielo oscuro y material orgánico</li>
+                    <li>El anillo Adams contiene arcos brillantes (agrupamientos misteriosos de material)</li>
+                    <li>Los anillos son muy tenues y difíciles de observar desde la Tierra</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🔭 Curiosidades</h2>
+                <ul>
+                    <li>Descubierto en 1846 gracias a cálculos matemáticos antes de ser observado directamente</li>
+                    <li>No se ve a simple vista desde la Tierra</li>
+                    <li>Tritón es la única luna grande con órbita retrógrada en el sistema solar</li>
+                    <li>Desde su descubrimiento, solo ha dado una vuelta completa al Sol (2011)</li>
+                    <li>Nombrado en honor al dios romano del mar: <strong>Neptuno</strong></li>
+                    <li>Neptuno fue el primer planeta descubierto mediante predicción matemática</li>
+                    <li>Su clima es el más extremo del sistema solar</li>
+                    <li>El viento más rápido registrado en Neptuno fue de 2,400 km/h</li>
+                    <li>El día más corto de los gigantes gaseosos después de Júpiter</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>👁️ Visibilidad desde la Tierra</h2>
+                <ul>
+                    <li>Requiere telescopio para observarse</li>
+                    <li>Brillo débil (magnitud aparente ~7.8)</li>
+                    <li>Se encuentra cerca de la eclíptica, en las constelaciones zodiacales</li>
+                    <li>Mejor visible en oposición (cuando la Tierra está entre Neptuno y el Sol)</li>
+                    <li>Puede ser fotografiado por astrónomos aficionados con equipos avanzados</li>
+                </ul>
+            </section>
+            <section class="price-section">
+                <p>Tipo: <strong>Planeta</strong></p>
+                <button class="buy-button" onclick="window.location.href='sistema solar.html'">Sistema Solar</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La estrella más grande</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: radial-gradient(circle at 50% 20%, #fffbe6 0%, #ffd966 60%, #ff9900 100%);
+            color: #b36b00;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            border: 5px solid #ffb300;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 0 30px #ffb300;
+            background-color: rgba(255, 243, 191, 0.95);
+        }
+        .logo {
+            font-size: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px #ffd700, 0 0 10px #ff9900;
+            color: #ff9900;
+            animation: shake 1s infinite alternate;
+        }
+        @keyframes shake {
+            0% { transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); }
+        }
+        .animated-logo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #ffb300;
+            border-radius: 10px;
+            box-shadow: 0 0 25px #ffd700;
+            animation: pulse 1.5s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.08); }
+        }
+        .price-section {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ffb300;
+            color: #ff9900;
+            animation: fadeIn 2s ease-in;
+        }
+        .description {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        .buy-button {
+            background-color: #ffb300;
+            color: #fffbe6;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px #ffb300;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .buy-button:hover {
+            background-color: #ff9900;
+            color: #fffbe6;
+            border: 2px solid #ffb300;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2 {
+            color: #ff9900;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #ffb300;
+        }
+        th {
+            background-color: #ffe5b4;
+            color: #b36b00;
+        }
+        section {
+            margin-bottom: 35px;
+        }
+        .subsection {
+            margin-left: 20px;
+        }
+        ul, ol {
+            margin-top: 0.5em;
+        }
+        .icon {
+            font-size: 1.3em;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">La estrella más grande</h1>
+        </header>
+        <main>
+            <section class="intro">
+                <h2>EL SOL</h2>
+                <p class="description">El Sol es una estrella ubicada en el centro del sistema solar. Es una esfera casi perfecta de plasma caliente, compuesta principalmente por hidrógeno (aproximadamente 74%) y helio (alrededor del 24%). Su energía se genera en el núcleo a través de un proceso llamado fusión nuclear, en el que los átomos de hidrógeno se combinan para formar helio, liberando enormes cantidades de energía en forma de luz y calor.
+                    <br><br>
+                    Desde la Tierra, el Sol parece un disco brillante en el cielo, y es la fuente principal de luz y energía para todos los seres vivos. Su influencia gravitacional mantiene a los planetas, asteroides y cometas en órbita a su alrededor.
+                    <br><br>
+                    El Sol tiene un diámetro de aproximadamente 1.4 millones de kilómetros y su edad estimada es de unos 4,6 mil millones de años. Se encuentra en una etapa estable de su vida, conocida como secuencia principal, y se espera que permanezca así durante otros 5 mil millones de años aproximadamente.
+                </p>
+            </section>
+            <section class="animation">
+                <img src="https://media.giphy.com/media/OWDUUrk8fwYj6/giphy.gif" alt="La estrella más brillante" class="animated-logo">  
+            </section>
+            <div class="description">Información más concentrada</div>
+            <section>
+                <h2>🌞 ¿Qué es el Sol?</h2>
+                <p>
+                    El Sol es una estrella ubicada en el centro del sistema solar. Es una esfera casi perfecta de plasma caliente, mantenida unida por su propia gravedad. Gracias a él, la vida en la Tierra es posible, ya que proporciona luz y calor.
+                </p>
+            </section>
+            <section>
+                <h2>📏 Características físicas</h2>
+                <table>
+                    <tr><th>Característica</th><th>Valor aproximado</th></tr>
+                    <tr><td>Tipo de estrella</td><td>Enana amarilla (tipo espectral G2V)</td></tr>
+                    <tr><td>Diámetro</td><td>1.392.700 km (109 veces el de la Tierra)</td></tr>
+                    <tr><td>Masa</td><td>1,989 × 10³⁰ kg (330.000 veces la de la Tierra)</td></tr>
+                    <tr><td>Temperatura superficial</td><td>~5.500 °C (fotosfera)</td></tr>
+                    <tr><td>Temperatura del núcleo</td><td>~15 millones °C</td></tr>
+                    <tr><td>Edad</td><td>~4.6 mil millones de años</td></tr>
+                    <tr><td>Distancia media a la Tierra</td><td>149.6 millones de km (1 UA)</td></tr>
+                    <tr><td>Rotación</td><td>25-35 días (depende de la latitud)</td></tr>
+                    <tr><td>Composición</td><td>74% hidrógeno, 24% helio, 2% otros elementos</td></tr>
+                </table>
+            </section>
+            <section>
+                <h2>🔥 Estructura del Sol</h2>
+                <ol>
+                    <li><strong>Núcleo:</strong> donde ocurre la fusión nuclear (hidrógeno en helio).</li>
+                    <li><strong>Zona radiativa:</strong> energía que se mueve lentamente hacia el exterior.</li>
+                    <li><strong>Zona convectiva:</strong> gases calientes suben y fríos bajan (convección).</li>
+                    <li><strong>Fotosfera:</strong> superficie visible del Sol.</li>
+                    <li><strong>Cromosfera:</strong> capa rojiza visible durante los eclipses.</li>
+                    <li><strong>Corona solar:</strong> atmósfera externa muy caliente y difusa.</li>
+                </ol>
+            </section>
+            <section>
+                <h2>⚛️ Fusión nuclear</h2>
+                <ul>
+                    <li>El Sol genera energía mediante la fusión nuclear en su núcleo:</li>
+                    <li>Convierte hidrógeno en helio, liberando enormes cantidades de energía.</li>
+                    <li>Esta energía se libera como luz, calor y radiación electromagnética.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>🌍 Importancia para la Tierra</h2>
+                <ul>
+                    <li><strong>Luz solar:</strong> esencial para la fotosíntesis.</li>
+                    <li><strong>Clima:</strong> regula temperaturas y ciclos climáticos.</li>
+                    <li><strong>Gravedad:</strong> mantiene a los planetas en órbita.</li>
+                    <li><strong>Energía solar:</strong> fuente renovable y limpia.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>🌪️ Fenómenos solares</h2>
+                <ul>
+                    <li><strong>Manchas solares:</strong> zonas más frías con intensa actividad magnética.</li>
+                    <li><strong>Erupciones solares:</strong> liberación repentina de energía (pueden afectar satélites).</li>
+                    <li><strong>Viento solar:</strong> flujo constante de partículas que interactúa con la magnetósfera terrestre.</li>
+                    <li><strong>Auroras:</strong> luces en los polos causadas por el viento solar.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>⏳ Futuro del Sol</h2>
+                <ul>
+                    <li>En ~5 mil millones de años:</li>
+                    <li>Se convertirá en una gigante roja.</li>
+                    <li>Luego expulsará sus capas exteriores formando una nebulosa planetaria.</li>
+                    <li>Finalmente quedará como una enana blanca.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>🧪 Estudio del Sol</h2>
+                <ul>
+                    <li>Observado por telescopios terrestres y satélites (como el Solar and Heliospheric Observatory – SOHO, o el Parker Solar Probe).</li>
+                    <li>Estudiar el Sol ayuda a entender otras estrellas y los efectos del clima espacial.</li>
+                </ul>
+            </section>
+            <section class="price-section">
+                <p>Tipo: <strong>Estrella</strong></p>
+                <button class="buy-button" onclick="window.location.href='sistema solar.html'">Sistema solar</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

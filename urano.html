@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urano - El Gigante Helado</title>
+    <style>
+        body {
+            background: radial-gradient(circle at 50% 20%, #e0f7fa 0%, #b2ebf2 60%, #0097a7 100%);
+            color: #004d61;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255,255,255,0.92);
+            border-radius: 15px;
+            box-shadow: 0 0 30px #81d4fa;
+            padding: 40px 30px;
+            margin: 30px;
+            max-width: 750px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #0097a7;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 1.2em;
+            margin: 15px 0 25px 0;
+        }
+        .dato {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        ul, ol {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            display: inline-block;
+            text-align: left;
+        }
+        .lunas {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            margin-left: 20px;
+        }
+        .exploracion {
+            background: #e1f5fe;
+            border-left: 5px solid #0097a7;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 8px;
+            display: inline-block;
+            text-align: left;
+        }
+        .curiosidades {
+            background: #b2ebf2;
+            color: #004d61;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 25px;
+            display: inline-block;
+            text-align: left;
+        }
+        .price-section {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-shadow: 0 0 10px #0097a7;
+        }
+        .buy-button {
+            background-color: #0097a7;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px #4dd0e1;
+            transition: transform 0.2s, background 0.2s;
+            margin-top: 10px;
+        }
+        .buy-button:hover {
+            background-color: #00796b;
+            color: #fff;
+            border: 2px solid #0097a7;
+            transform: scale(1.08);
+        }
+        .img-urano {
+            width: 180px;
+            box-shadow: 0 0 20px #4dd0e1;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px 5px;
+            }
+            .img-urano {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://astrotrueba.files.wordpress.com/2015/10/85079.gif?w=250&h=250" alt="Urano" class="img-urano">
+        <h1>🪐 Urano</h1>
+        <section class="intro">
+            <h2>Urano</h2>
+            <p class="description">
+                <strong>Posición:</strong> Séptimo planeta desde el Sol, a unos 2,870 millones de kilómetros.<br>
+                <strong>Tamaño y estructura:</strong> Diámetro de ~50,700 km, tercer planeta más grande. Gigante helado compuesto de agua, amoníaco y metano, con mezcla de rocas y gases.<br>
+                <strong>Rotación única:</strong> Eje inclinado casi 98°, gira "de lado". Un día dura 17.24 horas y las estaciones son extremas y largas.<br>
+                <strong>Atmósfera:</strong> Hidrógeno (83%), helio (15%) y metano (2%). El metano absorbe la luz roja, dándole su color azul verdoso.<br>
+                <strong>Temperatura:</strong> Promedio de -224 °C, uno de los más fríos del sistema solar.<br>
+                <strong>Anillos:</strong> Finos y oscuros, compuestos de hielo y roca.<br>
+                <strong>Lunas:</strong> 27 conocidas, las más grandes son Titania, Oberón, Umbriel, Ariel y Miranda.<br>
+                <strong>Campo magnético:</strong> No alineado con el eje de rotación y muy inclinado.<br>
+                <strong>Órbita:</strong> Un año dura 84 años terrestres.
+            </p>
+        </section>
+        <h2>🌌 Datos generales</h2>
+        <div class="dato"><strong>Distancia media del Sol:</strong> 2.870 millones de km (19,2 UA)</div>
+        <div class="dato"><strong>Diámetro:</strong> 50.724 km</div>
+        <div class="dato"><strong>Duración del día (rotación):</strong> ~17 horas y 14 minutos</div>
+        <div class="dato"><strong>Duración del año (traslación):</strong> ~84 años terrestres</div>
+        <div class="dato"><strong>Composición atmosférica:</strong> Hidrógeno (82%), helio (15%) y metano (2%)</div>
+
+        <h2>🧊 Características físicas</h2>
+        <ul>
+            <li><strong>Tipo de planeta:</strong> Gigante helado</li>
+            <li><strong>Color:</strong> Azul verdoso, por el metano que absorbe la luz roja y refleja la azul</li>
+            <li><strong>Temperatura promedio:</strong> -224 °C (uno de los más fríos del Sistema Solar)</li>
+            <li><strong>Núcleo:</strong> Posiblemente rocoso, rodeado por agua, amoníaco y metano congelado</li>
+        </ul>
+
+        <h2>🔄 Inclinación axial</h2>
+        <ul>
+            <li><strong>Inclinación extrema:</strong> ~98° (rueda sobre su órbita, "acostado de lado")</li>
+            <li>Esto provoca estaciones extremas de unos 21 años cada una</li>
+        </ul>
+
+        <h2>🪐 Anillos y lunas</h2>
+        <ul>
+            <li><strong>Anillos:</strong> Al menos 13, menos prominentes que los de Saturno</li>
+            <li><strong>Lunas conocidas:</strong> 27</li>
+            <li><strong>Principales lunas:</strong>
+                <ul class="lunas">
+                    <li>Titania</li>
+                    <li>Oberón</li>
+                    <li>Umbriel</li>
+                    <li>Ariel</li>
+                    <li>Miranda</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>🧭 Descubrimiento y curiosidades</h2>
+        <div class="curiosidades">
+            <ul>
+                <li><strong>Descubrimiento:</strong> William Herschel en 1781, el primer planeta descubierto con telescopio.</li>
+                <li><strong>Campo magnético:</strong> Inclinado 59° respecto al eje de rotación y desplazado del centro del planeta.</li>
+                <li><strong>Nombre:</strong> Proviene del dios griego del cielo, Urano (padre de Saturno).</li>
+                <li><strong>Vientos:</strong> Pueden alcanzar hasta 900 km/h en la atmósfera superior.</li>
+                <li><strong>Brillo:</strong> Es visible a simple vista en cielos muy oscuros, aunque parece una estrella débil.</li>
+            </ul>
+        </div>
+
+        <h2>🚀 Exploración</h2>
+        <div class="exploracion">
+            <ul>
+                <li><strong>Única visita:</strong> Voyager 2 en 1986, que proporcionó la mayor parte de la información sobre Urano.</li>
+                <li>Hasta la fecha, no ha habido más misiones dedicadas, aunque se están considerando para el futuro.</li>
+            </ul>
+        </div>
+        <section class="price-section">
+            <p>Tipo: <strong>Planeta</strong></p>
+            <button class="buy-button" onclick="window.location.href='sistema solar.html'">Sistema Solar</button>
+        </section>
+    </div>
+</body>
+</html>

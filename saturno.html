@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturno - El Señor de los Anillos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #0e0f1c;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            border: 5px solid #ffd700;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #ffd700;
+            background-color: rgba(14, 15, 28, 0.93);
+        }
+        .logo {
+            font-size: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ffd700;
+            text-shadow: 0 0 10px #ffd700;
+            animation: shake 1s infinite alternate;
+        }
+        @keyframes shake {
+            0% { transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); }
+        }
+        .animated-logo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #ffd700;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #ffd700;
+            animation: pulse 1.5s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+        .price-section {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ffd700;
+            animation: fadeIn 2s ease-in;
+        }
+        .description {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        .buy-button {
+            background-color: #ffd700;
+            color: #0e0f1c;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px #ffd700;
+            transition: transform 0.2s, background 0.2s, color 0.2s;
+        }
+        .buy-button:hover {
+            background-color: #0e0f1c;
+            color: #ffd700;
+            border: 2px solid #ffd700;
+            transform: scale(1.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: rgba(40, 40, 60, 0.85);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px #ffd70088;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: left;
+            color: #ffe082;
+        }
+        th {
+            background: #ffd700;
+            color: #0e0f1c;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background: rgba(255, 215, 0, 0.07);
+        }
+        ul {
+            padding-left: 20px;
+            margin: 0 auto 1.5em auto;
+            max-width: 700px;
+            text-align: left;
+            display: inline-block;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        a {
+            color: #4fc3f7;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 900px) {
+            table, ul {
+                width: 98%;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                padding: 10px;
+            }
+            table, ul {
+                width: 100%;
+            }
+            .logo {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="animation">
+            <img src="https://media.giphy.com/media/3o7buctjKD8g5r4544/giphy.gif" alt="Saturno animado" class="animated-logo">
+        </section>
+        <header>
+            <h1 class="logo">Saturno, danza de hielo en un aro de sueños</h1>
+        </header>
+        <main>
+            <section class="intro section">
+                <h2>Saturno</h2>
+                <p class="description">
+                    Es el sexto planeta desde el Sol, ubicado a unos 1,430 millones de kilómetros de distancia.<br>
+                    Es el segundo planeta más grande del sistema solar, con un diámetro de unos 120,500 km.<br>
+                    Como Júpiter, es un gigante gaseoso, formado principalmente por hidrógeno y helio.<br>
+                    No tiene una superficie sólida definida.<br>
+                    <strong>Anillos:</strong> Su rasgo más icónico: un sistema espectacular de anillos hechos de hielo, polvo y rocas.<br>
+                    Aunque parecen sólidos, los anillos son delgados y están formados por millones de fragmentos que orbitan el planeta.<br>
+                    <strong>Atmósfera:</strong> Compuesta principalmente de hidrógeno y helio, con nubes de amoníaco.<br>
+                    Tiene tormentas, rayos y bandas de nubes, similares a las de Júpiter, pero más suaves visualmente.<br>
+                    <strong>Temperatura:</strong> Muy frío: alrededor de -140 °C en promedio.<br>
+                    <strong>Rotación y traslación:</strong> Un día en Saturno dura solo 10.7 horas (rotación rápida).<br>
+                    Un año saturniano (una órbita completa alrededor del Sol) equivale a unos 29.5 años terrestres.<br>
+                    <strong>Campo magnético:</strong> Fuerte, aunque no tanto como el de Júpiter. Protege el planeta y sus lunas de la radiación cósmica.<br>
+                    <strong>Satélites:</strong> Tiene más de 140 lunas confirmadas. Entre ellas destacan Titán (con atmósfera y ríos de metano líquido) y Encélado (que expulsa chorros de agua desde un océano subterráneo).
+                </p>
+            </section>
+
+            <!-- Información adicional unificada del prompt -->
+            <div class="section">
+                <h2>🔝 Información Más Importante</h2>
+                <h3>🪐 Datos Generales</h3>
+                <ul>
+                    <li><strong>Tipo de planeta:</strong> Gigante gaseoso</li>
+                    <li><strong>Posición desde el Sol:</strong> 6.º planeta</li>
+                    <li><strong>Diámetro:</strong> ~120,536 km</li>
+                    <li><strong>Masa:</strong> 5.683 × 10²⁶ kg</li>
+                    <li><strong>Gravedad:</strong> 10.44 m/s²</li>
+                    <li><strong>Día:</strong> ~10.7 horas</li>
+                    <li><strong>Año:</strong> ~29.5 años terrestres</li>
+                    <li><strong>Composición atmosférica:</strong> Hidrógeno, helio y trazas de otros gases</li>
+                    <li><strong>Temperatura media:</strong> -139 °C</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>💍 Sistema de Anillos</h3>
+                <ul>
+                    <li>Compuestos de hielo, roca y polvo</li>
+                    <li>7 anillos principales: A, B, C, D, E, F y G</li>
+                    <li>Extensión: hasta 282,000 km desde Saturno</li>
+                    <li>Espesor: ~10 metros</li>
+                    <li>Origen probable: restos de lunas o material no aglomerado</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>🌕 Lunas de Saturno</h3>
+                <ul>
+                    <li><strong>Tiene más de 145 lunas confirmadas</strong></li>
+                    <li><strong>Titán:</strong> Más grande que Mercurio, con atmósfera densa y lagos de metano</li>
+                    <li><strong>Encélado:</strong> Expulsa chorros de agua desde un océano subterráneo</li>
+                    <li>Otras lunas notables: Mimas, Rea, Dione, Tetis, Japeto, Hiperión</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🔬 Características Adicionales</h2>
+                <h3>☁️ Atmósfera y Clima</h3>
+                <ul>
+                    <li>Bandas nubosas suaves</li>
+                    <li>Tormentas gigantes y vientos de hasta 1,800 km/h</li>
+                    <li>Hexágono polar en el polo norte</li>
+                </ul>
+                <h3>🧪 Composición Interna</h3>
+                <ul>
+                    <li>Núcleo rocoso</li>
+                    <li>Capa de hidrógeno metálico</li>
+                    <li>Presión enorme en el interior</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🛰️ Exploración Espacial</h2>
+                <table>
+                    <tr>
+                        <th>Misión</th>
+                        <th>Agencia</th>
+                        <th>Año</th>
+                        <th>Detalles</th>
+                    </tr>
+                    <tr>
+                        <td>Pioneer 11</td>
+                        <td>NASA</td>
+                        <td>1979</td>
+                        <td>Primer sobrevuelo de Saturno</td>
+                    </tr>
+                    <tr>
+                        <td>Voyager 1 y 2</td>
+                        <td>NASA</td>
+                        <td>1980–1981</td>
+                        <td>Descubrimientos de lunas y anillos</td>
+                    </tr>
+                    <tr>
+                        <td>Cassini-Huygens</td>
+                        <td>NASA/ESA/ASI</td>
+                        <td>2004–2017</td>
+                        <td>Estudió a fondo el planeta, sus anillos y lunas. Huygens aterrizó en Titán</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>🧭 Órbita y Movimiento</h2>
+                <ul>
+                    <li>Órbita casi circular e inclinación de 2.5°</li>
+                    <li>Rotación muy rápida: achatamiento polar evidente</li>
+                    <li>Campo magnético fuerte y alineado con el eje</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🔭 Curiosidades</h2>
+                <ul>
+                    <li>Saturno es menos denso que el agua: flotaría en una bañera gigante</li>
+                    <li>Conocido desde la antigüedad, visible a simple vista</li>
+                    <li>El hexágono polar es único en el sistema solar</li>
+                    <li>Algunas lunas tienen forma de "platillo volante"</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>📉 Datos Menos Relevantes</h2>
+                <ul>
+                    <li>Densidad media: 0.687 g/cm³</li>
+                    <li>Volumen suficiente para contener más de 760 Tierras</li>
+                    <li>Tiene auroras polares</li>
+                    <li>Campo magnético más débil que Júpiter, pero aún fuerte</li>
+                </ul>
+            </div>
+
+            <section class="price-section">
+                <p>Tipo: <strong>Planeta</strong></p>
+                <button class="buy-button" onclick="window.location.href='sistema solar.html'">Sistema Solar</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

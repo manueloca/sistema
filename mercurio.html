@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercurio - El Mensajero del Sol</title>
+    <style>
+        body {
+            background: radial-gradient(ellipse at center, #ffe4b5 0%, #ffa500 60%, #121212 100%);
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            border: 5px solid #ffa500;
+            padding: 30px 20px 20px 20px;
+            margin: 40px auto;
+            width: 90%;
+            max-width: 950px;
+            border-radius: 18px;
+            box-shadow: 0 0 20px #ffa500;
+            background-color: rgba(18, 18, 18, 0.95);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ffa500;
+            text-shadow: 0 0 10px #ffa500, 0 0 2px #fff;
+            margin-bottom: 0.2em;
+            animation: shake 1.5s infinite alternate;
+        }
+        @keyframes shake {
+            0% { transform: rotate(-1.5deg);}
+            100% { transform: rotate(1.5deg);}
+        }
+        .animated-logo {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border: 3px solid #ffa500;
+            border-radius: 50%;
+            box-shadow: 0 0 25px #ffa500;
+            animation: pulse 1.5s infinite alternate;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+        @keyframes pulse {
+            from { transform: scale(1);}
+            to { transform: scale(1.07);}
+        }
+        h1, h2, h3 {
+            color: #ffa500;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        ul, ol {
+            margin: 0 auto 1.5em auto;
+            padding-left: 1.2em;
+            max-width: 700px;
+            text-align: left;
+            display: inline-block;
+        }
+        ul li, ol li {
+            margin-bottom: 0.5em;
+        }
+        table {
+            width: 95%;
+            border-collapse: collapse;
+            margin: 20px auto 30px auto;
+            background: rgba(60, 35, 15, 0.85);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px #ffa500aa;
+        }
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+            color: #ffe4b5;
+        }
+        th {
+            background: #ffa500;
+            color: #121212;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background: rgba(255, 228, 181, 0.07);
+        }
+        a {
+            color: #4fc3f7;
+        }
+        .buy-button {
+            background-color: #ffa500;
+            color: #121212;
+            padding: 12px 28px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px #ffa500;
+            margin-top: 10px;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+        .buy-button:hover {
+            background-color: #121212;
+            color: #ffa500;
+            border: 2px solid #ffa500;
+            transform: scale(1.07);
+        }
+        @media (max-width: 900px) {
+            table, ul, ol {
+                width: 98%;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                padding: 10px;
+            }
+            table, ul, ol {
+                width: 100%;
+            }
+            .logo {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://media.giphy.com/media/11VmxI2cuf6aZi/giphy.gif" alt="Mercurio animado" class="animated-logo">
+        <header>
+            <h1 class="logo">☀️ Mercurio: El Mensajero del Sol</h1>
+        </header>
+        <main>
+            <section class="section">
+                <h2>🪐 Información General</h2>
+                <ul>
+                    <li><strong>Tipo de planeta:</strong> Terrestre (rocoso)</li>
+                    <li><strong>Posición desde el Sol:</strong> 1.º planeta</li>
+                    <li><strong>Diámetro:</strong> ~4,879 km</li>
+                    <li><strong>Masa:</strong> 3.30 × 10²³ kg (5.5% de la masa terrestre)</li>
+                    <li><strong>Gravedad:</strong> 3.7 m/s²</li>
+                    <li><strong>Duración del día (rotación):</strong> 58.6 días terrestres</li>
+                    <li><strong>Duración del año:</strong> 88 días terrestres</li>
+                    <li><strong>Temperatura media:</strong> ~167 °C (extremos: -180 °C a +430 °C)</li>
+                    <li><strong>Atmósfera:</strong> Exosfera: sodio, potasio, oxígeno, helio</li>
+                    <li><strong>Lunas:</strong> Ninguna</li>
+                    <li><strong>Apariencia:</strong> Gris, rocosa, similar a la Luna</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🧭 Características Únicas</h2>
+                <ul>
+                    <li>No tiene atmósfera significativa</li>
+                    <li>Gran diferencia térmica entre día y noche</li>
+                    <li>Rotación 3:2: gira tres veces por cada dos órbitas al Sol</li>
+                    <li>Núcleo metálico gigante (85% del radio del planeta)</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌋 Superficie</h2>
+                <ul>
+                    <li>Lleno de cráteres, muy parecido a la Luna</li>
+                    <li><strong>Cuenca Caloris:</strong> Uno de los cráteres más grandes (~1,550 km de diámetro)</li>
+                    <li><strong>Acantilados gigantes:</strong> Formados cuando el planeta se encogió al enfriarse</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🛰️ Exploración Espacial</h2>
+                <table>
+                    <tr>
+                        <th>Misión</th>
+                        <th>Agencia</th>
+                        <th>Años clave</th>
+                        <th>Objetivos</th>
+                    </tr>
+                    <tr>
+                        <td>Mariner 10</td>
+                        <td>NASA</td>
+                        <td>1974-75</td>
+                        <td>Primer sobrevuelo, primeras imágenes</td>
+                    </tr>
+                    <tr>
+                        <td>MESSENGER</td>
+                        <td>NASA</td>
+                        <td>2011-2015</td>
+                        <td>Orbitó Mercurio, cartografió toda la superficie</td>
+                    </tr>
+                    <tr>
+                        <td>BepiColombo</td>
+                        <td>ESA/JAXA</td>
+                        <td>2018-2025</td>
+                        <td>Estudiará su estructura, superficie y campo magnético</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="section">
+                <h2>🧪 Composición y Estructura</h2>
+                <ul>
+                    <li><strong>Núcleo:</strong> Hierro y níquel, posiblemente parcialmente líquido</li>
+                    <li><strong>Manto y corteza:</strong> Delgados</li>
+                    <li><strong>Campo magnético:</strong> Fuerte para su tamaño (1% del de la Tierra)</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌌 Curiosidades</h2>
+                <ul>
+                    <li>Es el planeta <strong>más pequeño</strong> del sistema solar</li>
+                    <li>El que <strong>orbita más rápido</strong> alrededor del Sol (88 días)</li>
+                    <li>No es el más caliente, aunque es el más cercano al Sol</li>
+                    <li>Visible desde la Tierra, pero solo <strong>al amanecer o atardecer</strong></li>
+                    <li>Nombrado en honor al dios romano <strong>Mercurio</strong>, el mensajero</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>👁️ Visibilidad desde la Tierra</h2>
+                <ul>
+                    <li>Difícil de observar a simple vista debido a su cercanía al Sol</li>
+                    <li>Mejores momentos: <strong>elongaciones máximas</strong> (al amanecer o al anochecer)</li>
+                </ul>
+            </section>
+            <section class="price-section">
+                <p>Tipo: <strong>Planeta</strong></p>
+                <button class="buy-button" onclick="window.location.href='sistema solar.html'">Sistema Solar</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

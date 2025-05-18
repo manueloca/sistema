@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marte - El Planeta Rojo</title>
+    <style>
+        body {
+            background: radial-gradient(ellipse at center, #ffb199 0%, #b23c00 60%, #1a1a1a 100%);
+            color: #ffe4b5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            border: 5px solid #ff6347;
+            padding: 30px 20px 20px 20px;
+            margin: 40px auto;
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 18px;
+            box-shadow: 0 0 20px #ff6347;
+            background-color: rgba(26, 26, 26, 0.93);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff6347;
+            text-shadow: 0 0 10px #ff6347, 0 0 2px #fff;
+            margin-bottom: 0.2em;
+            animation: shake 1.5s infinite alternate;
+        }
+        @keyframes shake {
+            0% { transform: rotate(-1.5deg);}
+            100% { transform: rotate(1.5deg);}
+        }
+        .animated-logo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 3px solid #ff6347;
+            border-radius: 50%;
+            box-shadow: 0 0 25px #ff6347;
+            animation: pulse 1.5s infinite alternate;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+        @keyframes pulse {
+            from { transform: scale(1);}
+            to { transform: scale(1.07);}
+        }
+        h1, h2, h3 {
+            color: #ff6347;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        ul, ol {
+            margin: 0 auto 1.5em auto;
+            padding-left: 1.2em;
+            max-width: 700px;
+            text-align: left;
+            display: inline-block;
+        }
+        ul li, ol li {
+            margin-bottom: 0.5em;
+        }
+        table {
+            width: 95%;
+            border-collapse: collapse;
+            margin: 20px auto 30px auto;
+            background: rgba(60, 35, 15, 0.85);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px #ff6347aa;
+        }
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+            color: #ffe4b5;
+        }
+        th {
+            background: #ff6347;
+            color: #1a1a1a;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background: rgba(255, 228, 181, 0.07);
+        }
+        a {
+            color: #66ccff;
+        }
+        .price-section {
+            margin-top: 25px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 0 0 10px #ff6347;
+            animation: fadeIn 2s ease-in;
+        }
+        .buy-button {
+            background-color: #ff6347;
+            color: #1a1a1a;
+            padding: 12px 28px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px #ff6347;
+            margin-top: 10px;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+        .buy-button:hover {
+            background-color: #1a1a1a;
+            color: #ff6347;
+            border: 2px solid #ff6347;
+            transform: scale(1.07);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0;}
+            to { opacity: 1;}
+        }
+        @media (max-width: 900px) {
+            table, ul, ol {
+                width: 98%;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                padding: 10px;
+            }
+            table, ul, ol {
+                width: 100%;
+            }
+            .logo {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/originals/d4/b8/b7/d4b8b723ec3204af1beee73a19e268e6.gif" alt="Marte animado" class="animated-logo">
+        <header>
+            <h1 class="logo">Marte, el planeta rojo</h1>
+        </header>
+        <main>
+            <section class="section">
+                <h2>🪐 Información General</h2>
+                <ul>
+                    <li><strong>Tipo de planeta:</strong> Terrestre (rocoso)</li>
+                    <li><strong>Posición desde el Sol:</strong> 4.º</li>
+                    <li><strong>Diámetro:</strong> ~6,779 km</li>
+                    <li><strong>Masa:</strong> 6.417 × 10²³ kg (10.7% de la masa de la Tierra)</li>
+                    <li><strong>Gravedad:</strong> 3.721 m/s² (38% de la gravedad terrestre)</li>
+                    <li><strong>Duración del día:</strong> 24 h 37 min</li>
+                    <li><strong>Duración del año:</strong> 687 días terrestres</li>
+                    <li><strong>Temperatura media:</strong> -63 °C</li>
+                    <li><strong>Atmósfera:</strong> 95% CO₂, 3% N₂, 1.6% Ar</li>
+                    <li><strong>Lunas:</strong> 2 (Fobos y Deimos)</li>
+                    <li><strong>Color:</strong> Rojizo, debido al óxido de hierro</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌋 Características Destacadas</h2>
+                <ul>
+                    <li><strong>Monte Olimpo:</strong> Volcán más alto del sistema solar (~22 km)</li>
+                    <li><strong>Valles Marineris:</strong> Cañón de más de 4,000 km de largo</li>
+                    <li><strong>Casquetes polares:</strong> Hielo de agua y CO₂ congelado</li>
+                    <li><strong>Tormentas de polvo:</strong> Las más grandes del sistema solar</li>
+                    <li><strong>Estaciones:</strong> Similares a las de la Tierra pero más largas</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🛰️ Exploración Espacial</h2>
+                <h3>Orbitadores:</h3>
+                <ul>
+                    <li><strong>Mars Odyssey (2001)</strong> – NASA</li>
+                    <li><strong>Mars Express (2003)</strong> – Agencia Espacial Europea</li>
+                    <li><strong>MAVEN (2014)</strong> – NASA, estudia atmósfera superior</li>
+                </ul>
+                <h3>Rovers:</h3>
+                <table>
+                    <tr>
+                        <th>Rover</th>
+                        <th>Año</th>
+                        <th>Agencia</th>
+                        <th>Función</th>
+                    </tr>
+                    <tr>
+                        <td>Sojourner</td>
+                        <td>1997</td>
+                        <td>NASA</td>
+                        <td>Primer rover en Marte</td>
+                    </tr>
+                    <tr>
+                        <td>Spirit y Opportunity</td>
+                        <td>2004</td>
+                        <td>NASA</td>
+                        <td>Buscaron evidencia de agua</td>
+                    </tr>
+                    <tr>
+                        <td>Curiosity</td>
+                        <td>2012</td>
+                        <td>NASA</td>
+                        <td>Estudia química del suelo y habitabilidad</td>
+                    </tr>
+                    <tr>
+                        <td>Perseverance</td>
+                        <td>2021</td>
+                        <td>NASA</td>
+                        <td>Recolecta muestras, busca vida</td>
+                    </tr>
+                    <tr>
+                        <td>Zhurong</td>
+                        <td>2021</td>
+                        <td>China (CNSA)</td>
+                        <td>Primer rover chino en Marte</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="section">
+                <h2>🌍 Posibilidades de Vida</h2>
+                <ul>
+                    <li><strong>Pasada:</strong> Evidencia de antiguos ríos, lagos y agua subterránea.</li>
+                    <li><strong>Actual:</strong> Posible existencia de vida microbiana bajo la superficie.</li>
+                    <li><strong>Futura:</strong> Perseverance recolecta muestras para futuras misiones a la Tierra.</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🚀 Colonización y Futuro</h2>
+                <ul>
+                    <li><strong>SpaceX:</strong> Planea enviar humanos en la década de 2030.</li>
+                    <li><strong>NASA:</strong> Planea misiones tripuladas en la década de 2040.</li>
+                    <li><strong>Viabilidad:</strong> Día similar al terrestre, agua congelada y condiciones moderadas para una colonia.</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌟 Curiosidades</h2>
+                <ul>
+                    <li>Las puestas de sol en Marte son <strong>azules</strong>.</li>
+                    <li>Un año marciano dura casi <strong>dos años terrestres</strong>.</li>
+                    <li>Marte tiene la mitad del tamaño de la Tierra, pero una geografía similar.</li>
+                    <li>Hay evidencia de <strong>agua líquida salada estacional</strong> en el pasado reciente.</li>
+                    <li>Sus lunas Fobos y Deimos parecen ser <strong>asteroides capturados</strong>.</li>
+                </ul>
+            </section>
+            <section class="price-section">
+                <p>Tipo: <strong>Planeta</strong></p>
+                <button class="buy-button" onclick="window.location.href='sistema solar.html'">Sistema Solar</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

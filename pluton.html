@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plutón - El Planeta Enano</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #1b1b2f;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .container {
+            border: 5px solid #fbc02d;
+            padding: 20px;
+            margin: 20px auto;
+            width: 85%;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #fbc02d;
+            background-color: rgba(27, 27, 47, 0.93);
+        }
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fbc02d;
+            text-shadow: 0 0 10px #fbc02d;
+            animation: shake 1s infinite alternate;
+        }
+        @keyframes shake {
+            0% { transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); }
+        }
+        .animated-logo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #fbc02d;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #fbc02d;
+            animation: pulse 1.5s infinite alternate;
+            margin-bottom: 20px;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+        h1, h2 {
+            color: #fbc02d;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        ul {
+            margin: 0 auto 1.5em auto;
+            padding-left: 1.2em;
+            max-width: 700px;
+            text-align: left;
+            display: inline-block;
+        }
+        table {
+            width: 95%;
+            border-collapse: collapse;
+            margin: 20px auto 30px auto;
+            background: rgba(60, 35, 15, 0.85);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px #fbc02d88;
+        }
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+            color: #ffe082;
+        }
+        th {
+            background: #fbc02d;
+            color: #1b1b2f;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background: rgba(251, 192, 45, 0.07);
+        }
+        .price-section {
+            margin-top: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-shadow: 0 0 10px #fbc02d;
+            animation: fadeIn 2s ease-in;
+        }
+        .description {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        .buy-button {
+            background-color: #fbc02d;
+            color: #1b1b2f;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px #fbc02d;
+            transition: transform 0.2s, background 0.2s, color 0.2s;
+        }
+        .buy-button:hover {
+            background-color: #1b1b2f;
+            color: #fbc02d;
+            border: 2px solid #fbc02d;
+            transform: scale(1.1);
+        }
+        a {
+            color: #4fc3f7;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 900px) {
+            table, ul {
+                width: 98%;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                padding: 10px;
+            }
+            table, ul {
+                width: 100%;
+            }
+            .logo {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg" alt="Plutón real" class="animated-logo">
+        <header>
+            <h1 class="logo">Plutón: El planeta enano más famoso</h1>
+        </header>
+        <main>
+            <section class="section">
+                <h2>🪐 Información General</h2>
+                <ul>
+                    <li><strong>Tipo de cuerpo:</strong> Planeta enano</li>
+                    <li><strong>Categoría:</strong> Objeto transneptuniano, cinturón de Kuiper</li>
+                    <li><strong>Distancia media del Sol:</strong> ~5.9 mil millones de km (39.5 UA)</li>
+                    <li><strong>Diámetro:</strong> ~2,377 km</li>
+                    <li><strong>Masa:</strong> 1.303 × 10²² kg</li>
+                    <li><strong>Gravedad:</strong> 0.62 m/s²</li>
+                    <li><strong>Día (rotación):</strong> ~6 días y 9 horas</li>
+                    <li><strong>Año (traslación):</strong> 248 años terrestres</li>
+                    <li><strong>Temperatura media:</strong> -229 °C</li>
+                    <li><strong>Atmósfera:</strong> Nitrógeno, metano, monóxido de carbono</li>
+                    <li><strong>Lunas:</strong> 5 (Caronte, Nix, Hidra, Cerbero, Estigia)</li>
+                    <li><strong>Descubrimiento:</strong> 18 de febrero de 1930 por Clyde Tombaugh</li>
+                    <li><strong>Órbita:</strong> Elíptica e inclinada, cruza la de Neptuno</li>
+                    <li><strong>Albedo:</strong> 0.49 a 0.66 (muy reflectante)</li>
+                    <li><strong>Densidad:</strong> ~1.86 g/cm³</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🧬 Composición y Estructura</h2>
+                <ul>
+                    <li><strong>Núcleo:</strong> Rocoso, posiblemente con hierro y silicatos</li>
+                    <li><strong>Manto:</strong> Hielo de agua y amoníaco</li>
+                    <li><strong>Corteza:</strong> Hielo de nitrógeno, metano y CO</li>
+                    <li><strong>Atmósfera:</strong> Delgada y temporal, se congela en el afelio</li>
+                    <li><strong>Presencia de tolinas:</strong> Compuestos orgánicos que dan color rojizo a la superficie</li>
+                    <li><strong>Posible océano subterráneo:</strong> Bajo la superficie helada</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌍 Superficie</h2>
+                <ul>
+                    <li><strong>Tombaugh Regio:</strong> Región en forma de corazón, rica en nitrógeno congelado</li>
+                    <li><strong>Sputnik Planitia:</strong> Llanura helada sin cráteres, con glaciares activos</li>
+                    <li><strong>Montañas de hielo:</strong> Hechas de hielo de agua que actúa como roca</li>
+                    <li><strong>Actividad geológica:</strong> A pesar de su tamaño, Plutón es geológicamente activo</li>
+                    <li><strong>Cañones y valles:</strong> Algunos de hasta 4 km de profundidad</li>
+                    <li><strong>Oscurecimiento estacional:</strong> Cambios de color por sublimación de hielos</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌌 Lunas de Plutón</h2>
+                <table>
+                    <tr>
+                        <th>Luna</th>
+                        <th>Características</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Caronte</strong></td>
+                        <td>Tamaño similar al de Plutón, órbita compartida; sistema binario; superficie con cañones y manchas oscuras</td>
+                    </tr>
+                    <tr>
+                        <td>Nix e Hidra</td>
+                        <td>Lunas pequeñas, irregulares, descubiertas en 2005; muy reflectantes</td>
+                    </tr>
+                    <tr>
+                        <td>Cerbero y Estigia</td>
+                        <td>Más pequeñas aún, descubiertas por Hubble (2011 y 2012); formas irregulares</td>
+                    </tr>
+                </table>
+                <ul>
+                    <li><strong>Caronte</strong> es tan grande que el centro de masa del sistema Plutón-Caronte está fuera de Plutón.</li>
+                    <li>Las lunas menores tienen órbitas caóticas y rotaciones irregulares.</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🛰️ Exploración Espacial</h2>
+                <table>
+                    <tr>
+                        <th>Misión</th>
+                        <th>Agencia</th>
+                        <th>Año</th>
+                        <th>Logros</th>
+                    </tr>
+                    <tr>
+                        <td>New Horizons</td>
+                        <td>NASA</td>
+                        <td>2015</td>
+                        <td>Primer sobrevuelo de Plutón; cartografía y análisis detallados</td>
+                    </tr>
+                </table>
+                <ul>
+                    <li>New Horizons descubrió montañas de hielo, glaciares y niebla en la atmósfera.</li>
+                    <li>Después de Plutón, <strong>New Horizons</strong> exploró el objeto Arrokoth en 2019.</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🧭 Órbita y Movimiento</h2>
+                <ul>
+                    <li>Órbita elíptica e inclinada (17° respecto al plano de la eclíptica)</li>
+                    <li>Durante 20 años (1979-1999), estuvo más cerca del Sol que Neptuno</li>
+                    <li>Está en resonancia 3:2 con Neptuno</li>
+                    <li>Un año plutoniano equivale a 248 años terrestres</li>
+                    <li>La inclinación axial es de 119°, lo que provoca estaciones extremas</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🧪 Propiedades Físicas</h2>
+                <ul>
+                    <li><strong>Densidad:</strong> ~1.86 g/cm³</li>
+                    <li><strong>Albedo:</strong> 0.49 a 0.66</li>
+                    <li><strong>Color:</strong> Tonos beige, rojizos y marrones debido a tolinas</li>
+                    <li><strong>Presión superficial:</strong> 0.00001 atm (muy baja)</li>
+                    <li><strong>Temperatura mínima registrada:</strong> -240 °C</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🔭 Historia del Descubrimiento</h2>
+                <ul>
+                    <li><strong>Descubierto por:</strong> Clyde Tombaugh en 1930</li>
+                    <li><strong>Nombre:</strong> Sugerido por Venetia Burney, de 11 años</li>
+                    <li><strong>Nombre oficial:</strong> 134340 Pluto (tras su reclasificación en 2006)</li>
+                    <li>Fue buscado como el "Planeta X" por Percival Lowell</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>❗ Reclasificación como Planeta Enano</h2>
+                <ul>
+                    <li>En 2006, la IAU redefinió el término "planeta"</li>
+                    <li>Plutón no "limpia su órbita", por eso fue reclasificado como planeta enano</li>
+                    <li>La decisión aún genera debate entre científicos y público</li>
+                    <li>Desde 2006, se han descubierto otros planetas enanos como Eris, Haumea y Makemake</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌠 Curiosidades</h2>
+                <ul>
+                    <li>Posee una atmósfera estacional</li>
+                    <li>Un día plutoniano dura más de 6 días terrestres</li>
+                    <li>EE. UU. es más ancho que Plutón</li>
+                    <li>Muchos astrónomos y público lo siguen considerando el "noveno planeta"</li>
+                    <li>Plutón tiene una órbita tan excéntrica que a veces está más cerca del Sol que Neptuno</li>
+                    <li>La superficie de Plutón es una de las más frías del sistema solar</li>
+                    <li>El sistema Plutón-Caronte es el único binario del sistema solar con masas tan similares</li>
+                </ul>
+            </section>
+            <section class="price-section">
+                <p>Tipo: <strong>Planeta enano</strong></p>
+                <button class="buy-button" onclick="window.location.href='sistema solar.html'">Sistema Solar</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

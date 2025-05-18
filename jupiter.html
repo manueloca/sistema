@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Júpiter - El Gigante del Sistema Solar</title>
+    <style>
+        body {
+            background-color: #2d1c0b;
+            color: #ffe4b5;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            border: 5px solid #c97e3f;
+            padding: 20px;
+            margin: 40px auto;
+            width: 90%;
+            max-width: 1100px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #c97e3f;
+            background-color: rgba(45, 28, 11, 0.92);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header, main, .section, .price-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2, h3, ul, ol, table, p {
+            text-align: center !important;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .logo {
+            font-size: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: shake 1s infinite alternate;
+        }
+        @keyframes shake {
+            0% { transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); }
+        }
+        .animated-logo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #ffb347;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #c97e3f;
+            animation: pulse 1.5s infinite alternate;
+            display: block;
+            margin: 0 auto 25px auto;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 15px auto;
+            background: rgba(60, 35, 15, 0.7);
+        }
+        table, th, td {
+            border: 1px solid #a05a2c;
+        }
+        th, td {
+            padding: 10px;
+            color: #ffe4b5;
+        }
+        th {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+            align-items: center;
+        }
+        a {
+            color: #ffb347;
+        }
+        ul, ol {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto 1.5em auto;
+            padding-left: 1.2em;
+            text-align: center;
+            display: inline-block;
+        }
+        .lunas-lista {
+            columns: 3;
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 90%;
+            text-align: left;
+            display: inline-block;
+        }
+        .lunas-lista li {
+            margin-bottom: 4px;
+        }
+        .price-section {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 0 0 10px #c97e3f;
+            animation: fadeIn 2s ease-in;
+            align-items: center;
+        }
+        .description {
+            font-size: 1.2em;
+            margin: 15px 0;
+            color: #ffe4b5;
+            text-align: center;
+        }
+        .buy-button {
+            background-color: #ffb347;
+            color: #2d1c0b;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px #c97e3f;
+            transition: transform 0.2s ease-in-out;
+            margin-top: 10px;
+        }
+        .buy-button:hover {
+            background-color: #2d1c0b;
+            color: #ffb347;
+            border: 2px solid #ffb347;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 900px) {
+            .lunas-lista {
+                columns: 2;
+            }
+            table, ul, ol, .lunas-lista {
+                width: 98%;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                padding: 5px;
+            }
+            .lunas-lista {
+                columns: 1;
+            }
+            table, ul, ol, .lunas-lista {
+                width: 100%;
+            }
+            h1.logo {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://64.media.tumblr.com/093c745e5c3363e801926093d903b961/tumblr_o9tpiyXqBz1s4fz4bo1_500.gifv" alt="Júpiter animado" class="animated-logo">
+        <header>
+            <h1 class="logo">Júpiter, rey de gas y tormenta eterna</h1>
+        </header>
+        <main>
+            <section class="intro section">
+                <h2>🪐 Información General</h2>
+                <ul>
+                    <li><strong>Tamaño:</strong> Es el planeta más grande del sistema solar, con un diámetro de aproximadamente 143,000 km. ¡Podrías meter más de 1,300 Tierras dentro de él!</li>
+                    <li><strong>Tipo de planeta:</strong> Gigante gaseoso</li>
+                    <li><strong>Posición desde el Sol:</strong> 5.º</li>
+                    <li><strong>Masa:</strong> 1.898 × 10²⁷ kg (317 veces la masa de la Tierra)</li>
+                    <li><strong>Volumen:</strong> 1,321 veces el de la Tierra</li>
+                    <li><strong>Densidad media:</strong> 1.33 g/cm³</li>
+                    <li><strong>Duración del día:</strong> 9 h 55 min (¡rotación más rápida del sistema solar!)</li>
+                    <li><strong>Duración del año:</strong> 11.86 años terrestres</li>
+                    <li><strong>Temperatura media:</strong> -145 °C</li>
+                    <li><strong>Composición:</strong> Hidrógeno (~90%) y helio (~10%), sin una superficie sólida definida.</li>
+                    <li><strong>Núcleo:</strong> Posiblemente rocoso, rodeado de hidrógeno metálico</li>
+                    <li><strong>Gravedad en la superficie:</strong> 24.79 m/s² (2.5 veces la de la Tierra)</li>
+                    <li><strong>Presión atmosférica:</strong> Muy alta, aumenta rápidamente con la profundidad</li>
+                    <li><strong>Campo magnético:</strong> Extremadamente poderoso, el más fuerte del sistema solar</li>
+                    <li><strong>Satélites naturales:</strong> 95 confirmados (2024)</li>
+                    <li><strong>Posición:</strong> Es el quinto planeta desde el Sol, a unos 778 millones de km.</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌀 Características Destacadas</h2>
+                <ul>
+                    <li><strong>Gran Mancha Roja:</strong> Tormenta más grande que la Tierra, activa desde hace siglos.</li>
+                    <li><strong>Cinturones y Zonas:</strong> Bandas atmosféricas con vientos de hasta 600 km/h.</li>
+                    <li><strong>Magnetosfera:</strong> La más grande del sistema solar, 20,000 veces más potente que la de la Tierra.</li>
+                    <li><strong>Sistema de Anillos:</strong> Tres anillos delgados y tenues, compuestos de polvo.</li>
+                    <li><strong>Auroras:</strong> Auroras polares mucho más intensas que las de la Tierra.</li>
+                    <li><strong>Radiación:</strong> Altísimos niveles de radiación cerca del planeta.</li>
+                    <li><strong>Calor interno:</strong> Emite más energía de la que recibe del Sol.</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌕 Lunas de Júpiter</h2>
+                <p>Júpiter tiene <strong>95 lunas confirmadas</strong> (2024). Las 4 principales (galileanas):</p>
+                <table>
+                    <tr>
+                        <th>Luna</th>
+                        <th>Características Principales</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Ío</strong></td>
+                        <td>Más de 400 volcanes activos, muy caliente y geológicamente activo.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Europa</strong></td>
+                        <td>Superficie helada con un posible océano subterráneo. Candidata para encontrar vida.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ganimedes</strong></td>
+                        <td>Mayor luna del sistema solar. Tiene campo magnético propio.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Calisto</strong></td>
+                        <td>Superficie llena de cráteres. Podría tener un océano interno.</td>
+                    </tr>
+                </table>
+                <h3>📝 Lista de todas las lunas de Júpiter (2024)</h3>
+                <ul class="lunas-lista">
+                    <li>Adrastea</li>
+                    <li>Aitne</li>
+                    <li>Amaltea</li>
+                    <li>Ananke</li>
+                    <li>Aoede</li>
+                    <li>Arche</li>
+                    <li>Autonoe</li>
+                    <li>Callirrhoe</li>
+                    <li>Calisto</li>
+                    <li>Carme</li>
+                    <li>Carpo</li>
+                    <li>Chaldene</li>
+                    <li>Cyllene</li>
+                    <li>Dia</li>
+                    <li>Elara</li>
+                    <li>Erinome</li>
+                    <li>Euanthe</li>
+                    <li>Eukelade</li>
+                    <li>Euporie</li>
+                    <li>Europa</li>
+                    <li>Eurydome</li>
+                    <li>Ganimedes</li>
+                    <li>Harpalyke</li>
+                    <li>Hegemone</li>
+                    <li>Helike</li>
+                    <li>Hermippe</li>
+                    <li>Herse</li>
+                    <li>Himalia</li>
+                    <li>Iocaste</li>
+                    <li>Ío</li>
+                    <li>Irène</li>
+                    <li>Ismenia</li>
+                    <li>Kallichore</li>
+                    <li>Kale</li>
+                    <li>Kaldene</li>
+                    <li>Kalyke</li>
+                    <li>Kore</li>
+                    <li>Kyra</li>
+                    <li>Leda</li>
+                    <li>Lysithea</li>
+                    <li>Megaclite</li>
+                    <li>Metis</li>
+                    <li>Mneme</li>
+                    <li>Orthosie</li>
+                    <li>Pasiphae</li>
+                    <li>Pasithee</li>
+                    <li>Praxidike</li>
+                    <li>Philophrosyne</li>
+                    <li>S/2000 J11</li>
+                    <li>S/2003 J2</li>
+                    <li>S/2003 J3</li>
+                    <li>S/2003 J4</li>
+                    <li>S/2003 J5</li>
+                    <li>S/2003 J9</li>
+                    <li>S/2003 J10</li>
+                    <li>S/2003 J12</li>
+                    <li>S/2003 J15</li>
+                    <li>S/2003 J16</li>
+                    <li>S/2003 J18</li>
+                    <li>S/2003 J19</li>
+                    <li>S/2003 J23</li>
+                    <li>S/2010 J1</li>
+                    <li>S/2010 J2</li>
+                    <li>S/2011 J1</li>
+                    <li>S/2011 J2</li>
+                    <li>S/2016 J1</li>
+                    <li>S/2016 J2</li>
+                    <li>S/2016 J3</li>
+                    <li>S/2017 J1</li>
+                    <li>S/2017 J2</li>
+                    <li>S/2017 J3</li>
+                    <li>S/2017 J4</li>
+                    <li>S/2017 J5</li>
+                    <li>S/2017 J6</li>
+                    <li>S/2017 J7</li>
+                    <li>S/2017 J8</li>
+                    <li>S/2017 J9</li>
+                    <li>S/2017 J10</li>
+                    <li>S/2017 J11</li>
+                    <li>S/2017 J12</li>
+                    <li>S/2017 J13</li>
+                    <li>S/2017 J14</li>
+                    <li>S/2017 J15</li>
+                    <li>S/2017 J16</li>
+                    <li>S/2017 J17</li>
+                    <li>S/2017 J18</li>
+                    <li>S/2017 J19</li>
+                    <li>S/2017 J20</li>
+                    <li>S/2017 J21</li>
+                    <li>S/2021 J1</li>
+                    <li>S/2021 J2</li>
+                    <li>S/2021 J3</li>
+                    <li>S/2021 J4</li>
+                    <li>S/2021 J5</li>
+                    <li>S/2021 J6</li>
+                    <li>S/2021 J7</li>
+                    <li>S/2021 J8</li>
+                    <li>S/2021 J9</li>
+                    <li>S/2021 J10</li>
+                    <li>S/2021 J11</li>
+                    <li>S/2021 J12</li>
+                    <li>S/2021 J13</li>
+                    <li>S/2021 J14</li>
+                    <li>S/2021 J15</li>
+                    <li>S/2021 J16</li>
+                    <li>S/2021 J17</li>
+                    <li>S/2021 J18</li>
+                    <li>S/2021 J19</li>
+                    <li>S/2021 J20</li>
+                    <li>S/2021 J21</li>
+                    <li>S/2021 J22</li>
+                    <li>S/2021 J23</li>
+                    <li>S/2021 J24</li>
+                    <li>S/2021 J25</li>
+                    <li>S/2021 J26</li>
+                    <li>S/2021 J27</li>
+                    <li>S/2021 J28</li>
+                    <li>S/2021 J29</li>
+                    <li>S/2021 J30</li>
+                    <li>S/2021 J31</li>
+                    <li>S/2021 J32</li>
+                    <li>S/2021 J33</li>
+                    <li>S/2021 J34</li>
+                    <li>S/2021 J35</li>
+                    <li>S/2021 J36</li>
+                    <li>S/2021 J37</li>
+                    <li>S/2021 J38</li>
+                    <li>S/2021 J39</li>
+                    <li>S/2021 J40</li>
+                    <li>S/2021 J41</li>
+                    <li>S/2021 J42</li>
+                    <li>S/2021 J43</li>
+                    <li>S/2021 J44</li>
+                    <li>S/2021 J45</li>
+                    <li>S/2021 J46</li>
+                    <li>S/2021 J47</li>
+                    <li>S/2021 J48</li>
+                    <li>S/2021 J49</li>
+                    <li>S/2021 J50</li>
+                    <li>S/2021 J51</li>
+                    <li>S/2021 J52</li>
+                    <li>S/2021 J53</li>
+                    <li>S/2021 J54</li>
+                    <li>S/2021 J55</li>
+                    <li>S/2021 J56</li>
+                    <li>S/2021 J57</li>
+                    <li>S/2021 J58</li>
+                    <li>S/2021 J59</li>
+                    <li>S/2021 J60</li>
+                    <li>S/2021 J61</li>
+                    <li>S/2021 J62</li>
+                    <li>S/2021 J63</li>
+                    <li>S/2021 J64</li>
+                    <li>S/2021 J65</li>
+                    <li>S/2021 J66</li>
+                    <li>S/2021 J67</li>
+                    <li>S/2021 J68</li>
+                    <li>S/2021 J69</li>
+                    <li>S/2021 J70</li>
+                    <li>S/2021 J71</li>
+                    <li>S/2021 J72</li>
+                    <li>S/2021 J73</li>
+                    <li>S/2021 J74</li>
+                    <li>S/2021 J75</li>
+                    <li>S/2021 J76</li>
+                    <li>S/2021 J77</li>
+                    <li>S/2021 J78</li>
+                    <li>S/2021 J79</li>
+                    <li>S/2021 J80</li>
+                    <li>S/2021 J81</li>
+                    <li>S/2021 J82</li>
+                    <li>S/2021 J83</li>
+                    <li>S/2021 J84</li>
+                    <li>S/2021 J85</li>
+                    <li>S/2021 J86</li>
+                    <li>S/2021 J87</li>
+                    <li>S/2021 J88</li>
+                    <li>S/2021 J89</li>
+                    <li>S/2021 J90</li>
+                    <li>S/2021 J91</li>
+                    <li>S/2021 J92</li>
+                    <li>S/2021 J93</li>
+                    <li>S/2021 J94</li>
+                    <li>S/2021 J95</li>
+                </ul>
+                <p style="font-size: 0.9em; text-align:center;">Fuente: <a href="https://es.wikipedia.org/wiki/Anexo:Lunas_de_J%C3%BApiter" target="_blank">Wikipedia - Lunas de Júpiter</a></p>
+            </section>
+            <section class="section">
+                <h2>🚀 Exploración Espacial</h2>
+                <ul>
+                    <li><strong>Pioneer 10 y 11:</strong> Primeros sobrevuelos (1973-74).</li>
+                    <li><strong>Voyager 1 y 2:</strong> Observaciones detalladas (1979).</li>
+                    <li><strong>Galileo:</strong> Orbitó Júpiter y estudió sus lunas (1995-2003).</li>
+                    <li><strong>Juno:</strong> Actualmente estudiando su campo magnético y atmósfera (desde 2016).</li>
+                    <li><strong>Europa Clipper:</strong> Explorará Europa (lanzamiento previsto en 2024).</li>
+                    <li><strong>JUICE (ESA):</strong> Misión europea para estudiar Júpiter y sus lunas (lanzada en 2023, llegada prevista en 2031).</li>
+                    <li><strong>Ulysses:</strong> Estudió el entorno magnético de Júpiter (1992).</li>
+                    <li><strong>New Horizons:</strong> Usó Júpiter para asistencia gravitacional rumbo a Plutón (2007).</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>🌟 Curiosidades</h2>
+                <ul>
+                    <li>Puede albergar más de 1,300 Tierras en su volumen.</li>
+                    <li>Rota más rápido que cualquier otro planeta.</li>
+                    <li>Su nombre proviene del dios romano Júpiter (Zeus en griego).</li>
+                    <li>A veces se le llama “estrella fallida” por su composición similar a la de una estrella.</li>
+                    <li>Se ve fácilmente desde la Tierra a simple vista.</li>
+                    <li>Si Júpiter hubiera tenido 80 veces más masa, podría haber sido una estrella.</li>
+                    <li>Su campo magnético es tan fuerte que representa un peligro para las naves espaciales.</li>
+                    <li>Algunas de sus lunas tienen atmósfera y actividad geológica.</li>
+                    <li>Júpiter tiene un sistema de anillos muy tenue, descubierto en 1979.</li>
+                </ul>
+            </section>
+            <section class="price-section">
+                <p>Tipo: <strong>Planeta</strong></p>
+                <button class="buy-button" onclick="window.location.href='sistema solar.html'">Sistema Solar</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
